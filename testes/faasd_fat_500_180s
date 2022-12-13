@@ -1,0 +1,44 @@
+hey -m POST -z 180s -H 'Content-Type: application/json' -d '{"number":500}' http://10.120.23.227:8080/function/factorial
+
+Summary:
+  Total:	180.0960 secs
+  Slowest:	0.2614 secs
+  Fastest:	0.0239 secs
+  Average:	0.0975 secs
+  Requests/sec:	512.5989
+  
+  Total data:	4523533 bytes
+  Size/request:	49 bytes
+
+Response time histogram:
+  0.024 [1]	|
+  0.048 [1164]	|■
+  0.071 [11739]	|■■■■■■■■■■■■■■■
+  0.095 [30544]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.119 [31959]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.143 [13691]	|■■■■■■■■■■■■■■■■■
+  0.166 [2890]	|■■■■
+  0.190 [284]	|
+  0.214 [24]	|
+  0.238 [12]	|
+  0.261 [9]	|
+
+
+Latency distribution:
+  10% in 0.0668 secs
+  25% in 0.0810 secs
+  50% in 0.0968 secs
+  75% in 0.1132 secs
+  90% in 0.1288 secs
+  95% in 0.1382 secs
+  99% in 0.1566 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0239 secs, 0.2614 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0008 secs
+  resp wait:	0.0975 secs, 0.0239 secs, 0.2614 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0009 secs
+
+Status code distribution:
+  [200]	92317 responses

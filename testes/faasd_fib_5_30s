@@ -1,0 +1,44 @@
+hey -m POST -z 30s -H 'Content-Type: application/json' -d 5 http://10.120.23.227:8080/function/fibonacci
+
+Summary:
+  Total:	30.0613 secs
+  Slowest:	0.2059 secs
+  Fastest:	0.0250 secs
+  Average:	0.0938 secs
+  Requests/sec:	532.9117
+  
+  Total data:	16020 bytes
+  Size/request:	1 bytes
+
+Response time histogram:
+  0.025 [1]	|
+  0.043 [149]	|■
+  0.061 [1109]	|■■■■■■■■■
+  0.079 [3226]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.097 [4756]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.115 [3915]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.134 [2008]	|■■■■■■■■■■■■■■■■■
+  0.152 [666]	|■■■■■■
+  0.170 [169]	|■
+  0.188 [20]	|
+  0.206 [1]	|
+
+
+Latency distribution:
+  10% in 0.0639 secs
+  25% in 0.0772 secs
+  50% in 0.0929 secs
+  75% in 0.1093 secs
+  90% in 0.1247 secs
+  95% in 0.1345 secs
+  99% in 0.1536 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0250 secs, 0.2059 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0005 secs
+  resp wait:	0.0937 secs, 0.0249 secs, 0.2059 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0006 secs
+
+Status code distribution:
+  [200]	16020 responses

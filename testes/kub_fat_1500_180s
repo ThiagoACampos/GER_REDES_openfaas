@@ -1,0 +1,45 @@
+hey -m POST -z 180s -H 'Content-Type: application/json' -d '{"number":1500}' http://localhost:8080/function/factorial
+
+Summary:
+  Total:	180.0601 secs
+  Slowest:	1.5344 secs
+  Fastest:	0.0037 secs
+  Average:	0.1010 secs
+  Requests/sec:	494.8849
+  
+  Total data:	4365018 bytes
+  Size/request:	48 bytes
+
+Response time histogram:
+  0.004 [1]	|
+  0.157 [77452]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.310 [11278]	|■■■■■■
+  0.463 [315]	|
+  0.616 [46]	|
+  0.769 [4]	|
+  0.922 [2]	|
+  1.075 [3]	|
+  1.228 [2]	|
+  1.381 [2]	|
+  1.534 [4]	|
+
+
+Latency distribution:
+  10% in 0.0501 secs
+  25% in 0.0668 secs
+  50% in 0.0839 secs
+  75% in 0.1286 secs
+  90% in 0.1722 secs
+  95% in 0.1999 secs
+  99% in 0.2682 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0037 secs, 1.5344 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0018 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0033 secs
+  resp wait:	0.1010 secs, 0.0037 secs, 1.5343 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0028 secs
+
+Status code distribution:
+  [200]	89082 responses
+  [500]	27 responses

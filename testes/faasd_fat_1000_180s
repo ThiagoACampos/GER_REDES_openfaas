@@ -1,0 +1,44 @@
+hey -m POST -z 180s -H 'Content-Type: application/json' -d '{"number":1000}' http://10.120.23.227:8080/function/factorial
+
+Summary:
+  Total:	180.0667 secs
+  Slowest:	0.1983 secs
+  Fastest:	0.0242 secs
+  Average:	0.0997 secs
+  Requests/sec:	501.3919
+  
+  Total data:	4423916 bytes
+  Size/request:	49 bytes
+
+Response time histogram:
+  0.024 [1]	|
+  0.042 [376]	|■
+  0.059 [3786]	|■■■■■■
+  0.076 [11215]	|■■■■■■■■■■■■■■■■■■
+  0.094 [21492]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.111 [25292]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.129 [17454]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.146 [8047]	|■■■■■■■■■■■■■
+  0.163 [2174]	|■■■
+  0.181 [405]	|■
+  0.198 [42]	|
+
+
+Latency distribution:
+  10% in 0.0685 secs
+  25% in 0.0834 secs
+  50% in 0.0994 secs
+  75% in 0.1157 secs
+  90% in 0.1311 secs
+  95% in 0.1400 secs
+  99% in 0.1566 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0242 secs, 0.1983 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0000 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0006 secs
+  resp wait:	0.0997 secs, 0.0242 secs, 0.1982 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0007 secs
+
+Status code distribution:
+  [200]	90284 responses

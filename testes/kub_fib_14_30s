@@ -1,0 +1,44 @@
+hey -m POST -z 30s -H 'Content-Type: application/json' -d 14 http://localhost:8080/function/fibonacci
+
+Summary:
+  Total:	30.0238 secs
+  Slowest:	1.1784 secs
+  Fastest:	0.0073 secs
+  Average:	0.1102 secs
+  Requests/sec:	453.6730
+  
+  Total data:	40863 bytes
+  Size/request:	3 bytes
+
+Response time histogram:
+  0.007 [1]	|
+  0.124 [8488]	|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  0.242 [4984]	|■■■■■■■■■■■■■■■■■■■■■■■
+  0.359 [117]	|■
+  0.476 [13]	|
+  0.593 [7]	|
+  0.710 [2]	|
+  0.827 [3]	|
+  0.944 [2]	|
+  1.061 [2]	|
+  1.178 [2]	|
+
+
+Latency distribution:
+  10% in 0.0601 secs
+  25% in 0.0719 secs
+  50% in 0.1163 secs
+  75% in 0.1318 secs
+  90% in 0.1550 secs
+  95% in 0.1881 secs
+  99% in 0.2489 secs
+
+Details (average, fastest, slowest):
+  DNS+dialup:	0.0000 secs, 0.0073 secs, 1.1784 secs
+  DNS-lookup:	0.0000 secs, 0.0000 secs, 0.0018 secs
+  req write:	0.0000 secs, 0.0000 secs, 0.0022 secs
+  resp wait:	0.1101 secs, 0.0073 secs, 1.1768 secs
+  resp read:	0.0000 secs, 0.0000 secs, 0.0065 secs
+
+Status code distribution:
+  [200]	13621 responses
